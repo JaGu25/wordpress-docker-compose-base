@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  wordpress:
+    image: wordpress:5.2.4-php7.2-fpm
+    container_name: wordpress
+    restart: unless-stopped
+    ports:
+        - '9000:9000'
+    environment:
+      WORDPRESS_DB_HOST: dbserver:3306
+      WORDPRESS_DB_PASSWORD: mysqlpw
+    volumes:
+      - ./wordpress:/var/www/html
+    depends_on:
+      - dbserver
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+        - ./nginx:/etc/nginx/conf.d
+        - ./logs/nginx:/var/log/nginx
+        - ./wordpress:/var/www/html
+    links:
+      - wordpress
+  dbserver:
+     image: mysql:5.7
+     environment:
+      MYSQL_ROOT_PASSWORD: mysqlpw
+     ports:
+      - 3306:3306
