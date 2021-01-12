@@ -1,0 +1,1 @@
+.stats_counter .stats_counter_title{text-transform:uppercase}.stats_counter.with_border_right{position:relative}.stats_counter.with_border_right:after{content:'';display:block;position:absolute;top:-35px;bottom:-15px;right:-15px;width:1px;background-color:#ddd}

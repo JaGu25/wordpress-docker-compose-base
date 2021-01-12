@@ -1,0 +1,16 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="translate">sub_title</custom-field>
+    </custom-fields>
+    <custom-types>
+        <custom-type translate="1">testimonial</custom-type>
+        <custom-type translate="1">sidebar</custom-type>
+        <custom-type translate="1">events</custom-type>
+        <custom-type translate="1">gallery</custom-type>
+        <custom-type translate="1">teachers</custom-type>
+        <custom-type translate="1">products</custom-type>
+    </custom-types>
+    <taxonomies>
+
+    </taxonomies>
+</wpml-config>

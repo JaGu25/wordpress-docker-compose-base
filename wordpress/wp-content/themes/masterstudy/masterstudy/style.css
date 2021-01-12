@@ -1,0 +1,24 @@
+/*
+	Theme Name: MasterStudy
+	Theme URI: https://stylemixthemes.com/masterstudy/
+	Author: StylemixThemes
+	Author URI: https://stylemixthemes.com/
+	Description: MasterStudy is the best WordPress theme for the Education & Learning Center - for educational organizations, who sell courses and organize classes locally. Using Masterstudy you can easily setup a WordPress site for your education company.
+	Version: 4.1.3
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Tags: classes, courses, education, education center, learning center, tutoring, teaching, study, studying, learning, lessons, instructor, teacher, mentor
+	Text Domain: masterstudy
+*/
+@media (max-width: 767px) {
+    body .top_bar_info li.hidden-info {
+        display: none !important;
+    }
+}
+.stm_lms_courses__filter_actions input[type=submit] {
+    outline: none;
+}
+
+.stm-lms-course__lesson-content iframe {
+    width: 100%;
+}

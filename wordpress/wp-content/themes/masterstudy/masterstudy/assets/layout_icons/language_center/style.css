@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'language_center';
+  src:  url('fonts/language_center.eot?z3hg0d');
+  src:  url('fonts/language_center.eot?z3hg0d#iefix') format('embedded-opentype'),
+    url('fonts/language_center.ttf?z3hg0d') format('truetype'),
+    url('fonts/language_center.woff?z3hg0d') format('woff'),
+    url('fonts/language_center.svg?z3hg0d#language_center') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="lng_center"], [class*=" lng_center"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'language_center' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lng_centerpinned:before {
+  content: "\e900";
+}
+.lng_centercommunication:before {
+  content: "\e901";
+}
+.lng_centeradjust:before {
+  content: "\e902";
+}
+.lng_centerlicense:before {
+  content: "\e903";
+}
+.lng_centerbook:before {
+  content: "\e904";
+}
+.lng_centertranslate:before {
+  content: "\e905";
+}
+.lng_centerpuzzle:before {
+  content: "\e906";
+}
+.lng_centerhouse:before {
+  content: "\e907";
+}
